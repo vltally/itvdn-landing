@@ -2,6 +2,7 @@
     &__top{
         background-color: #f0f2f4;
         border-bottom: 1px solid #e2e2e2;
+        
     }
 
     .contacts{
@@ -23,6 +24,7 @@
     padding: 10px 10px 8px;
     color: #424242;
     transition: 0.3s;
+    text-decoration: none;
 
     &:hover{
         color: lighten(#424242, 20%)
