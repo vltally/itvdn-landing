@@ -7,10 +7,23 @@
         flex-wrap: wrap;
         margin: 0;
         padding: 0 50px;
+        @media (max-width: 960px) {
+            justify-content: center;           
+        }
     }
 
     &__item{
         width: 25%;
+        @media (max-width: 960px) {
+            width: 50%;    
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 665px) {
+            width: 100%;   
+            padding: 0; 
+            margin-bottom: 0;
+        }
     }
 
     &__header{
@@ -25,6 +38,8 @@
         font-size: 0.875rem;
         line-height: 1.5;
         color: #5c5c5c;
+        padding: 0 8px 0;
+        box-sizing: border-box;
     }
 
 }
