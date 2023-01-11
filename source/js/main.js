@@ -3,6 +3,7 @@
     
     let openFormButton = document.querySelector(".arrow-down");
     let form = document.querySelector(".form");
+    let nav = document.querySelector(".nav");
 
     if(openFormButton){
         openFormButton.addEventListener("click", (e) => {
@@ -20,6 +21,19 @@
             else{
                 console.log("Is not valid");
             }
+        })
+    }
+
+    if (nav){
+        nav.addEventListener("click", function(e){
+            let target = e.target;
+
+            if(target.tagName.toLowerCase() !== 'a'){
+                return;
+            }
+            
+            e.preventDefault();
+            ITVDN.navigation.toggleToActiveLink(target);
         })
     }
    
